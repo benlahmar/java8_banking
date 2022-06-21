@@ -11,24 +11,18 @@ import com.bank.models.Operation;
 
 public class ServiceCompteImpl implements IServiceCompte{
 
-	ICompte CompteRepo;
-	
+	ICompte CompteRepo;	
 	IOperation OperRepo;
-	
-	
+		
 	public ServiceCompteImpl() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
-
 	public ServiceCompteImpl(ICompte compteRepo) {
 		super();
 		CompteRepo = compteRepo;
 	}
-
-	
 	
 	@Override
 	public void versser(double mnt, long idcpt) {
