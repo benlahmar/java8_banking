@@ -4,6 +4,10 @@ import java.util.Date;
 
 public abstract class Operation {
 
+	public Operation() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public long getIdop() {
 		return idop;
 	}
@@ -25,5 +29,14 @@ public abstract class Operation {
 	long idop;
 	Date date;
 	Compte compte;
+	public Operation(long idop, Date date) {
+		super();
+		this.idop = idop;
+		this.date = date;
+	}
+	@Override
+	public String toString() {
+		return "Operation [idop=" + idop + ", date=" + date + ", compte=" + compte + "]";
+	}
 	
 }
